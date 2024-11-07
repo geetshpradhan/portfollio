@@ -1,0 +1,134 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(ng.jpg);
+    background-size: cover;
+    color: #fdfdfc;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+/* Header and Profile */
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #fcf9f9;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2rem;
+    color: #90d7e6;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #27637d;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.about-me p, .section p {
+    font-size: 1rem;
+}
+
+/* Skills and Hobbies */
+.skills li, .hobbies ul, .contact ul, .language li {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Adjusting Profile Image and Text */
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header p {
+        font-size: 1rem;
+    }
+    
+    /* Section Text and Heading */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-me p, .section p {
+        font-size: 0.9rem;
+    }
+
+    /* Skills, Hobbies, Contact */
+    .skills li, .hobbies ul, .contact ul, .language li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust Layout to Stack Content */
+    .profile-container {
+        padding: 15px;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-me p, .section p, .skills li, .hobbies ul, .contact ul, .language li {
+        font-size: 0.8rem;
+    }
+}
